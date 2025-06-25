@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navigation {
+    background-color: #EFECE3;
+    display: flex;
+    gap: 300px ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 210px;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #212529;
+    font-size: 24px;
+}
+
+#navigation-items {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+#navigation-items li a {
+    text-decoration: none;
+    color: #212529;
+    font-size: 20px;
+}

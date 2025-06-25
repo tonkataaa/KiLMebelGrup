@@ -1,0 +1,23 @@
+.main-info{
+    width: 1900px;
+    height: 200px;
+}
+
+#main-text{
+    margin-left: 32%;
+    margin-top: 4%;
+}
+
+#main-text h1{
+    font-size: 70px;
+}
+
+#main-text a{
+    text-decoration: none;
+    color: #BCAF9A;
+    margin-left: 6%;
+}
+
+#main-text a, p{
+    font-size: 20px;
+}
