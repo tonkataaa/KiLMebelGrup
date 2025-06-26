@@ -1,0 +1,40 @@
+.gallery {
+    padding: 50px 210px;
+    background-color: #f8f8f8;
+}
+
+.gallery-section {
+    margin-bottom: 60px;
+}
+
+.gallery-section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #212529;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.facebook-link {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #EFECE3;
+    border-radius: 10px;
+}
+
+.facebook-link a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.facebook-link a:hover {
+    text-decoration: underline;
+}
