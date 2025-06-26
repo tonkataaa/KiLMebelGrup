@@ -21,3 +21,181 @@
 #main-text a, p{
     font-size: 20px;
 }
+
+/*Image css*/
+#image-hall{
+    width: 1560px;
+    height: 850px;
+    z-index: 0;
+    position: relative;
+}
+
+/*Contacts*/
+#contact-info{
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    grid-column-start: 2;
+}
+
+.info-box i {
+    font-size: 30px;
+    color: #A8977B;
+}
+
+.info-box h3 {
+    font-size: 27px;
+    margin: 0;
+}
+
+.info-box p {
+    font-size: 20px;
+    margin: 5px 0 0 0;
+}
+
+#email, #phone, h3{
+    font-size: 27px;
+    
+}
+
+#email, #phone, p{
+    font-size: 20px;
+}
+
+.contact-section{
+    width: 1885px;
+    height: 724px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F8F9FA;
+}
+
+
+#contact-form {
+    width: 500px;
+    height: 470px;
+    background-color: #FFFFFF;
+    padding: 30px;
+    margin-right: 600px;
+    margin-top: -70px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    z-index: 1;
+}
+
+
+#contact-form h2 {
+    text-align: left; 
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 0; 
+    font-size: 16px;
+    background-color: #f9f9f9; 
+}
+
+#contact-form textarea {
+    height: 120px;
+    resize: vertical; 
+}
+
+#contact-form button {
+    width: 170px;
+    height: 35px;
+    background-color: #A8977B;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #9a8768; 
+}
+
+/*Footer*/
+.footer-container {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    padding: 0 20px;
+    background-color: black;
+}
+
+.footer-container h3{
+    margin-top: 40px;
+    color: white;
+    font-size: 20px;
+}
+
+.footer-column p {
+    font-size: 20px;
+}
+
+.vl {
+    width: 1px;
+    height: 250px; 
+    background-color: #565D63; 
+    margin-top: -1px;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-column p{
+    color: #565D63;
+}
+
+.footer-column a{
+    text-decoration: none;
+    color: #565D63;
+
+}
+
+#footer-hr {
+    color: #212529;
+}
+
+.footer-bottom{
+    height: 100px;
+    font-size: 20px;
+    padding: 34px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    color: white;
+}
+
+#bottom-apps{
+    display: flex;
+    gap: 40px;
+    color: white;
+}
