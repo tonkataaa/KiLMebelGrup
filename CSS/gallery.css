@@ -18,6 +18,7 @@
   height: auto;
   border-radius: 10px;
   object-fit: cover;
+  z-index: 0;
 }
 
 .facebook-link {
@@ -37,4 +38,47 @@
 
 .facebook-link a:hover {
     text-decoration: underline;
+}
+
+/*Responsive*/
+
+@media (max-width: 1200px) {
+    .gallery {
+        padding: 50px 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        padding: 30px 20px;
+    }
+
+    .gallery-section h2 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .facebook-link {
+        font-size: 16px;
+        padding: 15px 10px;
+        margin-top: 30px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        padding: 20px 10px;
+    }
+
+    .gallery-section h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .facebook-link {
+        font-size: 14px;
+        padding: 12px 8px;
+        margin-top: 25px;
+    }
 }

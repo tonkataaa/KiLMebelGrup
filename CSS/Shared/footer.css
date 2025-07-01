@@ -2,71 +2,61 @@
     background-color: #1f1f1f;
     color: #dcdcdc;
     font-family: 'Segoe UI', sans-serif;
-    padding-top: 40px;
+    padding: 40px 20px 30px;
 }
 
 .footer-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 40px;
-    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .footer-column {
+    flex: 1 1 300px;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    min-width: 200px;
 }
 
 .footer-column h3 {
-    color: #ffffff;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #fff;
 }
 
 .footer-column p,
 .footer-column a {
-    color: #aaaaaa;
-    font-size: 15px;
+    color: #dcdcdc;
+    font-size: 16px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.footer-column a:hover,
-.footer-column p:hover {
+.footer-column a:hover {
     color: #ffffff;
 }
 
-#footer-hr {
-    border: none;
-    border-top: 1px solid #444;
-    margin: 20px auto;
-    width: 90%;
-}
-
 .footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    border-top: 1px solid #333;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: #111;
-    color: #ccc;
+    flex-wrap: wrap;
+    color: #999;
     font-size: 14px;
 }
 
-#bottom-apps {
-    display: flex;
-    gap: 20px;
-}
-
 #bottom-apps a {
-    color: #ccc;
-    font-size: 18px;
+    color: #dcdcdc;
+    margin-left: 15px;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
@@ -74,16 +64,31 @@
     color: #ffffff;
 }
 
-/* Responsive adjustments */
+/* Responsive Footer */
+
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        gap: 30px;
+        padding: 0 10px;
+    }
+
+    .footer-column {
+        min-width: 100%;
     }
 
     .footer-bottom {
         flex-direction: column;
         gap: 10px;
+        text-align: center;
+    }
+
+    #bottom-apps {
+        margin-top: 10px;
+    }
+
+    #bottom-apps a {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }

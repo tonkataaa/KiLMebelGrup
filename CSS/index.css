@@ -4,36 +4,6 @@
 	box-sizing: border-box;
 }
 
-/*Navigation*/
-.navigation {
-    background-color: #EFECE3;
-    display: flex;
-    gap: 300px ;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 210px;
-}
-
-#logo a {
-    text-decoration: none;
-    color: #212529;
-    font-size: 24px;
-}
-
-#navigation-items {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-#navigation-items li a {
-    text-decoration: none;
-    color: #212529;
-    font-size: 20px;
-}
-
-
 /*Header main*/
 .header-main {
     background-color: #EFECE3;
@@ -137,42 +107,6 @@
     color: #666;
     margin-bottom: 40px;
 }
-
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-/*Navigation*/
-.navigation {
-    background-color: #EFECE3;
-    display: flex;
-    gap: 300px ;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 210px;
-}
-
-#logo a {
-    text-decoration: none;
-    color: #212529;
-    font-size: 24px;
-}
-
-#navigation-items {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-#navigation-items li a {
-    text-decoration: none;
-    color: #212529;
-    font-size: 20px;
-}
-
 
 /*Header main*/
 .header-main {
@@ -330,6 +264,80 @@
     margin-bottom: 20px;
 }
 
+/*Effect*/
+#categories-grid {
+    position: relative;
+    z-index: 1;
+}
+    
+.category-card {
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 1;
+}
+    
+.category-card:hover {
+    transform: scale(1.03);
+    z-index: 2;
+}
+    
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+    border-radius: 10px;
+}
+    
+.category-card:hover::before {
+    opacity: 1;
+}
+    
+.category-card:hover .category-text {
+    transform: translateY(-10px);
+}
+    
+.category-card:hover .category-image img {
+    transform: scale(1.1);
+}
+    
+.category-text {
+    transition: transform 0.5s ease;
+    position: relative;
+    z-index: 2;
+}
+    
+.category-image img {
+    transition: transform 0.5s ease;
+}
+    
+.category-title {
+    position: relative;
+    display: inline-block;
+}
+    
+.category-card:hover .category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    animation: underline 0.5s forwards;
+}
+    
+@keyframes underline {
+    from { width: 0 }
+    to { width: 100% }
+}
+
 /*Promo Card*/
 /* Promo Card Section */
 .promo-card {
@@ -395,105 +403,137 @@
     background-color: #495057;
 }
 
-.kil-footer{
-    height: 250px;
-    background-color: #000000;
-    color: white;
-    padding: 60px 0 30px;
-}
-
-/*Footer*/
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 40px;
-    padding: 0 20px;
-}
-
-.vl {
-    width: 1px;
-    height: 250px; /* или колкото искаш */
-    background-color: #565D63; /* черна линия */
-    margin-top: -57px;
-}
-
-.footer-column{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.footer-column p{
-    color: #565D63;
-}
-
-.footer-column a{
-    text-decoration: none;
-    color: #565D63;
-
-}
-
-#footer-hr {
-    color: #212529;
-}
-
-.footer-bottom{
-    height: 100px;
-    font-size: 20px;
-    padding: 34px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #000000;
-    color: white;
-}
-
-#bottom-apps{
-    display: flex;
-    gap: 40px;
-    color: white;
-}
 
 /*Responsive*/
-@media (max-width: 768px) {
-    #categories-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .category-card {
-        flex-direction: column;
+/* Responsive за Header Main */
+@media (max-width: 1200px) {
+    .header-main {
+        width: 100%;
         height: auto;
+        padding: 30px 40px;
     }
-    
-    .category-text {
-        order: 2; 
-        padding: 20px;
-        text-align: center;
+
+    .header-main h1 {
+        font-size: 48px;
+        max-width: 100%;
     }
-    
-    .category-image {
-        order: 1; 
-        height: 200px;
+
+    .header-main p {
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #gallery-button {
+        width: 120px;
+        height: 38px;
+        font-size: 18px;
     }
 }
 
+/* Responsive за Features Section */
+@media (max-width: 992px) {
+    #features {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 50px 20px;
+    }
+
+    .feature-box {
+        max-width: 100%;
+        flex: 1 1 300px;
+        padding: 20px;
+    }
+
+    .feature-icon {
+        font-size: 36px;
+    }
+
+    .feature-box h3 {
+        font-size: 18px;
+    }
+
+    .feature-box p {
+        font-size: 14px;
+    }
+}
+
+/* Responsive за Categories Section */
+@media (max-width: 992px) {
+    #categories {
+        padding: 50px 20px;
+    }
+
+    #categories h1 {
+        font-size: 36px;
+    }
+
+    #categories p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    #categories-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .category-card {
+        height: auto;
+        flex-direction: column;
+    }
+
+    /* При мобилни - показваме само снимката */
+    .category-text {
+        display: none;
+    }
+
+    .category-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .category-image img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+/* Responsive за Promo Card */
 @media (max-width: 992px) {
     .card-container {
         flex-direction: column;
     }
-    
+
     .promo-image,
     .promo-text {
         width: 100%;
     }
-    
-    .promo-text {
-        padding: 40px;
+
+    .promo-image {
+        height: 300px;
     }
-    
+
+    .promo-text {
+        padding: 40px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .promo-text h1 {
+        font-size: 28px;
+    }
+
+    .promo-text p {
+        font-size: 16px;
+    }
+
     .promo-button {
-        align-self: center;
+        font-size: 16px;
+        padding: 10px 25px;
     }
 }
+
 

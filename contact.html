@@ -11,15 +11,21 @@
 </head>
 <body>
     <header>
-        <div class="navigation">
-            <div id="logo">
-                <a href="index.html">КиЛ Мебели</a>
-            </div>
-            <ul id="navigation-items">
-                <li><a href="index.html">Начало</a></li>
-                <li><a href="gallery.html">Галерия</a></li>
-                <li><a href="contact.html">Контакти</a></li>
-            </ul>
+<div class="navigation">
+    <div id="logo">
+        <a href="index.html">КиЛ Мебели</a>
+    </div>
+
+    <div class="burger" id="burger">
+        <i class="fa fa-bars"></i>
+    </div>
+
+    <ul id="navigation-items">
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="gallery.html">Галерия</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+    </ul>
+</div>
     </header>
 
     <div class="main-info">
@@ -52,11 +58,11 @@
         <div id="contact-form">
             <h2>Пратете запитване</h2>
             <form>
-                <input type="text" placeholder="Име">
-                <input type="text" placeholder="Имейл">
-                <input type="text" placeholder="Тема">
-                <textarea placeholder="Събощение"></textarea>
-                <button>Изпрати</button>
+                <input id="name" type="text" placeholder="Име">
+                <input id="email-input" type="text" placeholder="Имейл">
+                <input id="topic" type="text" placeholder="Тема">
+                <textarea id="message" placeholder="Събощение"></textarea>
+                <button type="submit" id="send-form">Изпрати</button>
             </form>
             </div>
         </div>
@@ -85,5 +91,8 @@
             <a href="https://www.instagram.com/kilmebeli/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
+
+    <script type="module" src="JS/contact-form.js"></script>
+    <script src="/JS/burgerMenu.js"></script>
 </body>
 </html>
