@@ -46,12 +46,16 @@
 @media (max-width: 1200px) {
     .navigation {
         padding: 15px 100px;
+        display: flex; /* Добавено */
+        justify-content: space-between; /* Добавено */
+        align-items: center; /* Добавено */
     }
 }
 
 @media (max-width: 768px) {
     .burger {
         display: block;
+        /* Няма нужда от position: absolute - ще остане в flex контейнера */
     }
 
     #navigation-items {
@@ -74,5 +78,6 @@
 @media (max-width: 480px) {
     .navigation {
         padding: 10px 20px;
+        /* Flex свойствата се запазват */
     }
 }
