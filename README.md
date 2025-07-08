@@ -3,7 +3,7 @@
 KiLMebelGrup is a modern web application built for a professional furniture company, offering customers a convenient and intuitive way to browse furniture categories and make inquiries. The platform is fully responsive, secure, and optimized for a seamless user experience.
 
 🌐 Live 
-🔗 Check out the live site: kilmebeli.com
+🔗 Check out the live site: [kilmebeli.com](https://kilmebeli.com/)
 
 📌 Main Features
 🛋️ Furniture Showcase – Clean and modern product display with categories
