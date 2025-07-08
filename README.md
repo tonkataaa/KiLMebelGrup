@@ -1,21 +1,33 @@
-# KiLMebelGrup
-VivoDetailing is a web application for booking and inquiries, providing a convenient and secure way to manage auto detailing services. The app supports user registration, login, password recovery, and includes an admin panel for managing bookings and customer inquiries.
+🪑 KiLMebelGrup
 
-🌐 Access for the app
-You can check it at:
-🔗 
+KiLMebelGrup is a modern web application built for a professional furniture company, offering customers a convenient and intuitive way to browse furniture categories and make inquiries. The platform is fully responsive, secure, and optimized for a seamless user experience.
 
-📌 Main features
-✉️ Customer Inquiry System – Easy contact form with Firebase integration
-⚡ Blazing Fast Performance – Optimized for speed
-📱 Responsive design for all devices
-🔒 Secure & Reliable – Hosted on Netlify
-🛠 Technology stack
+🌐 Live 
+🔗 Check out the live site: [kilmebeli.com](https://kilmebeli.com/)
+
+📌 Main Features
+🛋️ Furniture Showcase – Clean and modern product display with categories
+
+✉️ Customer Inquiry System – Simple contact form powered by Firebase
+
+📱 Responsive Design – Looks great on desktops, tablets, and phones
+
+⚡ Optimized Performance – Fast loading and lightweight frontend
+
+🔒 Secure & Reliable – Hosted on Netlify with trusted backend support
+
+🧰 Technology Stack
 Frontend: HTML5, CSS3, JavaScript (ES6+)
-Backend & Database: FireBase
-Hosting: Netlifly
-Tools: Git
 
-For business inquiries or support, please contact:
+Backend & Database: Firebase (Firestore)
+
+Hosting: Netlify
+
+Tools: Git, GitHub
+
+📞 Contact
+For business inquiries, feedback, or support, feel free to reach out:
 📧 Email: anton.kenderov1@gmail.com
-© 2025 KilMebelGrup - All rights reserved
+
+© License
+© 2025 KiLMebelGrup – All rights reserved.
