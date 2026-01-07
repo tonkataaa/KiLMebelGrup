@@ -1,5 +1,6 @@
 import { Header } from './features/Header.jsx';
 import { Hero } from './features/Hero.jsx';
+import { Features } from './features/Features.jsx';
 
 function App() {
     return (
@@ -7,6 +8,7 @@ function App() {
             <Header />
             <main>
                 <Hero />
+                <Features />
             </main>
         </div>
     )
