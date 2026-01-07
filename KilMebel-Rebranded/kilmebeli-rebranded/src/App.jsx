@@ -5,6 +5,7 @@ import { Gallery } from './features/Gallery.jsx';
 import { Promo } from './features/Promo.jsx';
 import { Contact } from './features/Contact.jsx';
 import { Footer } from './features/Footer.jsx';
+import { Toaster } from './/components/toaster.jsx';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 <Contact />
             </main>
             <Footer />
+            <Toaster />
         </div>
     )
 
