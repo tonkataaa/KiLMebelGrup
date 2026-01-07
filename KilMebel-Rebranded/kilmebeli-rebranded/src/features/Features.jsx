@@ -2,6 +2,9 @@ import { Shield, Award, Truck, Sparkles, Leaf } from "lucide-react";
 import { ImageWithFallback } from "../components/ImageWithFallBack";
 import styles from "../styles/Features.module.css";
 
+import firstPic from '../assets/1.jpg';
+import secondPic from '../assets/2.jpg';
+
 export function Features() {
   return (
     <section className={styles.featuresSection}>
@@ -42,7 +45,7 @@ export function Features() {
           <div className={`${styles.imageSide} ${styles.orderMobile2}`}>
             <div className={styles.imageRoundedShadow}>
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1765371513189-44702dcee4be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBjYWJpbmV0JTIwZGV0YWlsfGVufDF8fHx8MTc2NzQzNTE3NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={firstPic}
                 alt="Premium wood materials"
                 className={styles.aspectImage}
               />
@@ -99,7 +102,7 @@ export function Features() {
                   <Shield className={styles.guaranteeIcon} />
                 </div>
                 <div>
-                  <h3 className={styles.guaranteeTitle}>10-годишна гаранция</h3>
+                  <h3 className={styles.guaranteeTitle}>2-годишна гаранция</h3>
                   <p className={styles.guaranteeSub}>На всички мебелни колекции</p>
                 </div>
               </div>
@@ -116,17 +119,13 @@ export function Features() {
                   <span className={styles.dot}></span>
                   Доживотна клиентска поддръжка
                 </li>
-                <li className={styles.guaranteeItem}>
-                  <span className={styles.dot}></span>
-                  Опции за разширена гаранция
-                </li>
               </ul>
             </div>
           </div>
           <div className={styles.imageSide}>
             <div className={`${styles.imageRoundedShadow} ${styles.darkBg}`}>
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1600210492493-0946911123ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob21lJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzY3MzYyNDg4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                src={secondPic}
                 alt="Modern home interior"
                 className={styles.guaranteeImage}
               />

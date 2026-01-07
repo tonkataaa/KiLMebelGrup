@@ -3,6 +3,8 @@ import { ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "../components/ImageWithFallBack";
 import styles from "../styles/Hero.module.css";
 
+import openerPic from '../assets/openerPic.jpg';
+
 export function Hero() {
   const scrollToGallery = () => {
     document.getElementById('gallery')?.scrollIntoView({ behavior: 'smooth' });
@@ -16,7 +18,7 @@ export function Hero() {
     <section className={styles.heroSection}>
       <div className={styles.backgroundOverlay}>
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1765371513189-44702dcee4be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3b29kZW4lMjBjYWJpbmV0JTIwZGV0YWlsfGVufDF8fHx8MTc2NzQzNTE3NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+          src={openerPic}
           alt="Furniture craftsmanship"
           className={styles.bgImage}
         />

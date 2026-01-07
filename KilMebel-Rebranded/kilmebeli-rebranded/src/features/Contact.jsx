@@ -107,8 +107,8 @@ export function Contact() {
             <div className={styles.workingHoursCard}>
               <h3 className={styles.hoursTitle}>Работно време</h3>
               <div className={styles.hoursList}>
-                <p>Понеделник - Петък: 9:00 - 18:00</p>
-                <p>Събота: 10:00 - 15:00</p>
+                <p>Понеделник - Петък: 8:30 - 17:00</p>
+                <p>Събота: 8:00 - 14:00</p>
                 <p>Неделя: Почивен ден</p>
               </div>
             </div>

@@ -1,8 +1,28 @@
 import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Bone, ChevronLeft, ChevronRight } from "lucide-react";
 import { ImageWithFallback } from "../components/ImageWithFallBack";
 import { Button } from "../components/Button";
 import styles from "../styles/Gallery.module.css";
+
+import one from '../assets/Kitchens/1.jpg';
+import two from '../assets/Kitchens/2.jpg';
+import three from '../assets/Kitchens/3.jpg';
+import four from '../assets/Kitchens/4.jpg';
+import five from '../assets/Kitchens/5.jpg';
+import six from '../assets/Kitchens/6.jpg';
+import seven from '../assets/Kitchens/7.jpg';
+import eight from '../assets/Kitchens/8.jpg';
+
+import bOne from '../assets/Bedrooms/1.jpg';
+import bTwo from '../assets/Bedrooms/2.jpg';
+import bThree from '../assets/Bedrooms/3.jpg';
+import bFour from '../assets/Bedrooms/4.jpg';
+
+import oONE from '../assets/Other/1.jpg';
+import oTwo from '../assets/Other/2.jpg';
+import oThree from '../assets/Other/3.jpg';
+import oFour from '../assets/Other/4.jpg';
+
 
 export function Gallery() {
   const [currentKitchenIndex, setCurrentKitchenIndex] = useState(0);
@@ -10,19 +30,28 @@ export function Gallery() {
   const [currentOtherIndex, setCurrentOtherIndex] = useState(0);
 
   const kitchenImages = [
-    "https://images.unsplash.com/photo-1610177534644-34d881503b83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBraXRjaGVuJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzY3MzcwMjIwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    "https://images.unsplash.com/photo-1680210849773-f97a41c6b7ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb250ZW1wb3JhcnklMjBraXRjaGVuJTIwZGVzaWdufGVufDF8fHx8MTc2NzQzMDcyN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    "https://images.unsplash.com/photo-1600210492493-0946911123ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBob21lJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzY3MzYyNDg4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    one,
+    two,
+    three,
+    four,
+    five,
+    six,
+    seven,
+    eight
   ];
 
   const bedroomImages = [
-    "https://images.unsplash.com/photo-1680503146476-abb8c752e1f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBiZWRyb29tJTIwZnVybml0dXJlfGVufDF8fHx8MTc2NzM0OTM4NXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWRyb29tJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MXx8fHwxNzY3MzU4MjY2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    bOne,
+    bTwo,
+    bThree,
+    bFour
   ];
 
   const otherImages = [
-    "https://images.unsplash.com/photo-1759753976401-4b41b1acdaaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZnVybml0dXJlJTIwc2hvd3Jvb218ZW58MXx8fHwxNzY3NDM1MTczfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    "https://images.unsplash.com/photo-1717911100009-717b917b401c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmdXJuaXR1cmUlMjBjcmFmdHNtYW5zaGlwfGVufDF8fHx8MTc2NzQzNTE3Nnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    oONE,
+    oTwo,
+    oThree,
+    oFour
   ];
 
   const CarouselSection = ({ title, images, currentIndex, setIndex }) => {
@@ -88,7 +117,7 @@ export function Gallery() {
         <div className={styles.header}>
           <h2 className={styles.title}>Галерия</h2>
           <p className={styles.subtitle}>
-            Разгледайте нашите проекти и вдъхновете се за вашия следващ дизайн
+            Разгледайте нашите проекти и се вдъхновете за вашия следващ дизайн
           </p>
         </div>
 
