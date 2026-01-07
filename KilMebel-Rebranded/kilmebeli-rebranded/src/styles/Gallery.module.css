@@ -1,0 +1,134 @@
+.section {
+  padding: 64px 0;
+  background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 96px 0;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header {
+  max-width: 896px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  color: #525252; 
+}
+
+.mainGallery {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.carouselContainer {
+  margin-bottom: 64px;
+}
+
+.carouselTitle {
+  margin-bottom: 24px;
+}
+
+.carouselWrapper {
+  position: relative;
+}
+
+.carouselWrapper:hover .navButtonLeft,
+.carouselWrapper:hover .navButtonRight {
+  opacity: 1;
+}
+
+.imageFrame {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #f5f5f5; 
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navButtonBase {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 5;
+}
+
+.navButtonBase:hover {
+  background-color: #ffffff !important;
+}
+
+.navButtonLeft {
+  left: 16px;
+}
+
+.navButtonRight {
+  right: 16px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.dotsWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.dot {
+  padding: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  border: none;
+  background-color: #d4d4d4; 
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  background-color: #a3a3a3; 
+}
+
+.dotActive {
+  background-color: #b45309; 
+  width: 32px;
+}
+
+.footerLink {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.facebookLink {
+  color: #b45309;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.facebookLink:hover {
+  color: #92400e;
+}
