@@ -4,6 +4,7 @@ import { Features } from './features/Features.jsx';
 import { Gallery } from './features/Gallery.jsx';
 import { Promo } from './features/Promo.jsx';
 import { Contact } from './features/Contact.jsx';
+import { Footer } from './features/Footer.jsx';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <Promo />
                 <Contact />
             </main>
+            <Footer />
         </div>
     )
 
